@@ -1,0 +1,32 @@
+MY_AND TEST
+True True = True
+True False = False
+False True = False
+False False = False
+
+MY_OR TEST
+True True = True
+True False = True
+False True = True
+False False = False
+
+MY_NOT TEST
+True = False
+False = True
+
+MY_IMPLIES TEST
+True True = True
+True False = False
+False True = True
+False False = True
+
+EXPRESSION EVALUATOR TESTS
+Test 1 : ('and', True, True) = True
+Test 2 : ('and', True, False) = False
+Test 3 : ('or', False, True) = True
+Test 4 : ('not', False) = True
+Test 5 : ('implies', True, False) = False
+Test 6 : ('implies', ('not', ('or', True, True)), ('not', ('not', True))) = True
+
+STEP 7 TEST
+ZeroDivisionError: division by zero
